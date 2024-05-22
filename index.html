@@ -1,28 +1,19 @@
 <html>
     <head>
         <style>
-            .rgb-color {
-                animation: color-change 6s infinite alternate;
-            }
             .rgb-text {
                 animation: text-change 6s infinite alternate;
             }
-            @keyframes color-change {
+            @keyframes text-change {
                 0% { color: rgb(255, 0, 0); }
                 33% { color: rgb(0, 255, 0); }
                 66% { color: rgb(0, 0, 255); }
                 100% { color: rgb(255, 0, 0); }
             }
-            @keyframes text-change {
-                0% { filter: hue-rotate(0deg); }
-                33% { filter: hue-rotate(120deg); }
-                66% { filter: hue-rotate(240deg); }
-                100% { filter: hue-rotate(0deg); }
-            }
         </style>
     </head>
     <body class="rgb-text">
-        <h1 class="rgb-color">
+        <h1>
             Hey, I'm dses
         </h1>
         <div>
