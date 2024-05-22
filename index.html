@@ -1,16 +1,39 @@
-
 <html>
-    <h1>
-        Hey, I'm dses
-    </h1>
+    <head>
+        <style>
+            .rgb-color {
+                animation: color-change 6s infinite alternate;
+            }
+            .rgb-text {
+                animation: text-change 6s infinite alternate;
+            }
+            @keyframes color-change {
+                0% { color: rgb(255, 0, 0); }
+                33% { color: rgb(0, 255, 0); }
+                66% { color: rgb(0, 0, 255); }
+                100% { color: rgb(255, 0, 0); }
+            }
+            @keyframes text-change {
+                0% { filter: hue-rotate(0deg); }
+                33% { filter: hue-rotate(120deg); }
+                66% { filter: hue-rotate(240deg); }
+                100% { filter: hue-rotate(0deg); }
+            }
+        </style>
+    </head>
     <body>
-        <h2>About me</h2>
-        <p>
-            I am a video game addict who makes yt vids sometimes.
-        </p>
-        <h2>What I'm working on</h2>
-        <p>
-            tryna pass school :/
-        </p>
+        <h1 class="rgb-color">
+            Hey, I'm dses
+        </h1>
+        <div class="rgb-text">
+            <h2>About me</h2>
+            <p>
+                I am a video game addict who makes yt vids sometimes.
+            </p>
+            <h2>What I'm working on</h2>
+            <p>
+                tryna pass school :/
+            </p>
+        </div>
     </body>
 </html>
